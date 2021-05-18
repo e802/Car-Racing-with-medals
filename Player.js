@@ -24,7 +24,7 @@ class Player {
     database.ref(playerIndex).set({
       name:this.name,
       distance:this.distance,
-      rank:this.rank+1
+      rank:this.rank+1 //needs to update in the database with a child under players as 'rank' and +1 because this.rank starts from 0
     });
   }
 
