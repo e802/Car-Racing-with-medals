@@ -44,6 +44,7 @@ class Form {
       Player.updateCarsAtEnd(0);
       var removingplayers=database.ref("players");
       removingplayers.remove();
+      location.reload();
     });
 
   }
